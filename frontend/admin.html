@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>FIT3D — Admin Analytics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<link rel="stylesheet" href="css/admin-dashboard.css">
+<script>
+  window.FIT3D_API_BASE = ''; // must match the value in index.html to share a login session
+</script>
+</head>
+<body>
+  <div class="dash">
+    <header class="dash-header">
+      <div class="dash-brand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.4" fill="currentColor" stroke="none"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+        FIT3D <span>Admin Analytics</span>
+      </div>
+      <a class="dash-back" href="index.html">← Back to app</a>
+    </header>
+
+    <div id="dashBanner" class="dash-banner" style="display:none"></div>
+
+    <section class="kpi-grid" id="kpiGrid"></section>
+
+    <section class="chart-grid">
+      <div class="chart-card">
+        <h2>Workouts Completed <span>last 14 days</span></h2>
+        <canvas id="workoutsChart" height="200"></canvas>
+      </div>
+      <div class="chart-card">
+        <h2>Goal Popularity</h2>
+        <canvas id="goalsChart" height="200"></canvas>
+      </div>
+      <div class="chart-card">
+        <h2>Free vs Pro</h2>
+        <canvas id="planChart" height="200"></canvas>
+      </div>
+      <div class="chart-card">
+        <h2>Revenue <span>last 6 months, est.</span></h2>
+        <canvas id="revenueChart" height="200"></canvas>
+      </div>
+    </section>
+
+    <section class="table-card">
+      <h2>Recent Users</h2>
+      <div class="table-wrap">
+        <table id="usersTable">
+          <thead><tr><th>Name</th><th>Email</th><th>Plan</th><th>Joined</th><th>Workouts</th></tr></thead>
+          <tbody id="usersTbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="table-card">
+      <h2>Most Logged Exercises</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Exercise</th><th>Goal</th><th>Times Logged</th></tr></thead>
+          <tbody id="exercisesTbody"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+<script src="js/admin-dashboard.js"></script>
+</body>
+</html>

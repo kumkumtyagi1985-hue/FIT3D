@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<title>FIT3D — 3D Exercise Guide &amp; Workout Coach</title>
+<meta name="description" content="3D exercise encyclopedia and personalized workout coach — goal-based workouts, live muscle highlighting, boxing mode, and an AI workout generator."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+  // Point this at your deployed backend (see /backend and the README) to enable
+  // real accounts, payments, server-persisted history, and the admin dashboard.
+  // Leave it empty ('') to run FIT3D fully offline as a static site.
+  window.FIT3D_API_BASE = ''; // e.g. 'https://your-backend.onrender.com/api'
+</script>
+</head>
+<body>
+<div id="frame"><div id="root"></div></div>
+
+<script src="js/data.js"></script>
+<script src="js/state.js"></script>
+<script src="js/api.js"></script>
+<script src="js/viewer.js"></script>
+<script src="js/ui.js"></script>
+<script>init();</script>
+</body>
+</html>

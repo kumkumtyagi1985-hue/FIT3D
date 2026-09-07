@@ -1,0 +1,682 @@
+[
+  {
+    "id": "EX01",
+    "name": "Jumping Jacks",
+    "goal": [
+      "FatLoss",
+      "Mobility"
+    ],
+    "bodyPart": "Full Body",
+    "primary": "calves",
+    "secondary": [
+      "quads",
+      "shoulders"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": true,
+    "workSec": 45,
+    "restSec": 15,
+    "calories": 8,
+    "instructions": "Jump feet out while raising arms overhead, then return to start — keep a light, quick rhythm.",
+    "sets": null,
+    "reps": null
+  },
+  {
+    "id": "EX02",
+    "name": "Mountain Climbers",
+    "goal": [
+      "FatLoss",
+      "Abs"
+    ],
+    "bodyPart": "Core",
+    "primary": "abs",
+    "secondary": [
+      "shoulders",
+      "quads"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": true,
+    "workSec": 40,
+    "restSec": 20,
+    "calories": 9,
+    "instructions": "From a plank, drive knees toward your chest alternately at a fast pace, keeping hips low.",
+    "sets": null,
+    "reps": null
+  },
+  {
+    "id": "EX03",
+    "name": "High Knees",
+    "goal": [
+      "FatLoss"
+    ],
+    "bodyPart": "Legs",
+    "primary": "quads",
+    "secondary": [
+      "calves"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": true,
+    "workSec": 40,
+    "restSec": 20,
+    "calories": 9,
+    "instructions": "Run in place, driving knees up toward hip height as fast as you can.",
+    "sets": null,
+    "reps": null
+  },
+  {
+    "id": "EX04",
+    "name": "Burpees",
+    "goal": [
+      "FatLoss"
+    ],
+    "bodyPart": "Full Body",
+    "primary": "chest",
+    "secondary": [
+      "quads",
+      "shoulders"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Intermediate",
+    "timed": true,
+    "workSec": 40,
+    "restSec": 30,
+    "calories": 12,
+    "instructions": "Drop into a squat, kick back to a plank, do a push-up, then jump up explosively.",
+    "sets": null,
+    "reps": null
+  },
+  {
+    "id": "EX05",
+    "name": "Crunch",
+    "goal": [
+      "Abs"
+    ],
+    "bodyPart": "Core",
+    "primary": "abs",
+    "secondary": [],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": false,
+    "workSec": 35,
+    "restSec": 30,
+    "calories": 4,
+    "instructions": "Lie back with knees bent and curl your shoulders off the floor by contracting your abs.",
+    "sets": 3,
+    "reps": 12
+  },
+  {
+    "id": "EX06",
+    "name": "Plank",
+    "goal": [
+      "Abs"
+    ],
+    "bodyPart": "Core",
+    "primary": "abs",
+    "secondary": [
+      "lowerback",
+      "shoulders"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": true,
+    "workSec": 45,
+    "restSec": 30,
+    "calories": 5,
+    "instructions": "Hold a straight line from head to heels, resting on forearms and toes, bracing your core.",
+    "sets": null,
+    "reps": null
+  },
+  {
+    "id": "EX07",
+    "name": "Reverse Crunch",
+    "goal": [
+      "Abs"
+    ],
+    "bodyPart": "Core",
+    "primary": "abs",
+    "secondary": [
+      "obliques"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": false,
+    "workSec": 35,
+    "restSec": 30,
+    "calories": 4,
+    "instructions": "Lying down, lift your hips off the floor by drawing your knees toward your chest.",
+    "sets": 3,
+    "reps": 12
+  },
+  {
+    "id": "EX08",
+    "name": "Leg Raise",
+    "goal": [
+      "Abs"
+    ],
+    "bodyPart": "Core",
+    "primary": "abs",
+    "secondary": [
+      "hamstrings"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Intermediate",
+    "timed": false,
+    "workSec": 35,
+    "restSec": 30,
+    "calories": 5,
+    "instructions": "Lying flat, raise straight legs toward the ceiling, then lower slowly without arching your back.",
+    "sets": 3,
+    "reps": 12
+  },
+  {
+    "id": "EX09",
+    "name": "Dumbbell Bicep Curl",
+    "goal": [
+      "Arms"
+    ],
+    "bodyPart": "Arms",
+    "primary": "biceps",
+    "secondary": [
+      "forearms"
+    ],
+    "equipment": [
+      "Dumbbell"
+    ],
+    "difficulty": "Beginner",
+    "timed": false,
+    "workSec": 35,
+    "restSec": 45,
+    "calories": 4,
+    "instructions": "Curl the dumbbells toward your shoulders, keeping your elbows pinned to your sides.",
+    "sets": 3,
+    "reps": 12
+  },
+  {
+    "id": "EX10",
+    "name": "Hammer Curl",
+    "goal": [
+      "Arms"
+    ],
+    "bodyPart": "Arms",
+    "primary": "biceps",
+    "secondary": [
+      "forearms"
+    ],
+    "equipment": [
+      "Dumbbell"
+    ],
+    "difficulty": "Beginner",
+    "timed": false,
+    "workSec": 35,
+    "restSec": 45,
+    "calories": 4,
+    "instructions": "Curl the dumbbells with your palms facing each other throughout the movement.",
+    "sets": 3,
+    "reps": 12
+  },
+  {
+    "id": "EX11",
+    "name": "Triceps Dips",
+    "goal": [
+      "Arms"
+    ],
+    "bodyPart": "Arms",
+    "primary": "triceps",
+    "secondary": [
+      "shoulders"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Intermediate",
+    "timed": false,
+    "workSec": 35,
+    "restSec": 45,
+    "calories": 5,
+    "instructions": "Lower your body by bending your elbows off a bench or chair, then press back up.",
+    "sets": 3,
+    "reps": 12
+  },
+  {
+    "id": "EX12",
+    "name": "Diamond Push-Up",
+    "goal": [
+      "Arms",
+      "Chest"
+    ],
+    "bodyPart": "Arms",
+    "primary": "triceps",
+    "secondary": [
+      "chest"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Advanced",
+    "timed": false,
+    "workSec": 35,
+    "restSec": 45,
+    "calories": 6,
+    "instructions": "Form a diamond with your hands under your chest and lower into a close push-up.",
+    "sets": 3,
+    "reps": 12
+  },
+  {
+    "id": "EX13",
+    "name": "Push Up",
+    "goal": [
+      "Chest",
+      "FatLoss"
+    ],
+    "bodyPart": "Chest",
+    "primary": "chest",
+    "secondary": [
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": false,
+    "workSec": 35,
+    "restSec": 40,
+    "calories": 6,
+    "instructions": "Lower your chest to the floor keeping your body straight, then press back up.",
+    "sets": 3,
+    "reps": 12
+  },
+  {
+    "id": "EX14",
+    "name": "Dumbbell Bench Press",
+    "goal": [
+      "Chest"
+    ],
+    "bodyPart": "Chest",
+    "primary": "chest",
+    "secondary": [
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "Dumbbell"
+    ],
+    "difficulty": "Intermediate",
+    "timed": false,
+    "workSec": 40,
+    "restSec": 60,
+    "calories": 6,
+    "instructions": "Press the dumbbells up from chest level until your arms extend, then lower with control.",
+    "sets": 3,
+    "reps": 13
+  },
+  {
+    "id": "EX15",
+    "name": "Incline Push Up",
+    "goal": [
+      "Chest"
+    ],
+    "bodyPart": "Chest",
+    "primary": "chest",
+    "secondary": [
+      "shoulders"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": false,
+    "workSec": 35,
+    "restSec": 40,
+    "calories": 5,
+    "instructions": "Hands on a raised surface, lower your chest toward it and press back up.",
+    "sets": 3,
+    "reps": 12
+  },
+  {
+    "id": "EX16",
+    "name": "Superman",
+    "goal": [
+      "Back"
+    ],
+    "bodyPart": "Back",
+    "primary": "lowerback",
+    "secondary": [
+      "glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": false,
+    "workSec": 35,
+    "restSec": 30,
+    "calories": 4,
+    "instructions": "Lying face down, lift your arms and legs off the floor together, then lower.",
+    "sets": 3,
+    "reps": 12
+  },
+  {
+    "id": "EX17",
+    "name": "Bent-Over Row",
+    "goal": [
+      "Back"
+    ],
+    "bodyPart": "Back",
+    "primary": "lats",
+    "secondary": [
+      "biceps",
+      "traps"
+    ],
+    "equipment": [
+      "Dumbbell"
+    ],
+    "difficulty": "Intermediate",
+    "timed": false,
+    "workSec": 40,
+    "restSec": 60,
+    "calories": 6,
+    "instructions": "Hinge at the hips and pull the dumbbells toward your ribs, squeezing your shoulder blades.",
+    "sets": 3,
+    "reps": 13
+  },
+  {
+    "id": "EX18",
+    "name": "Bird Dog",
+    "goal": [
+      "Back",
+      "Mobility"
+    ],
+    "bodyPart": "Back",
+    "primary": "lowerback",
+    "secondary": [
+      "glutes"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": false,
+    "workSec": 35,
+    "restSec": 30,
+    "calories": 3,
+    "instructions": "On all fours, extend opposite arm and leg while keeping your hips level.",
+    "sets": 3,
+    "reps": 12
+  },
+  {
+    "id": "EX19",
+    "name": "Shoulder Press",
+    "goal": [
+      "Shoulders"
+    ],
+    "bodyPart": "Shoulders",
+    "primary": "shoulders",
+    "secondary": [
+      "triceps"
+    ],
+    "equipment": [
+      "Dumbbell"
+    ],
+    "difficulty": "Intermediate",
+    "timed": false,
+    "workSec": 40,
+    "restSec": 60,
+    "calories": 5,
+    "instructions": "Press the dumbbells overhead from shoulder height until your arms are straight.",
+    "sets": 3,
+    "reps": 13
+  },
+  {
+    "id": "EX20",
+    "name": "Lateral Raise",
+    "goal": [
+      "Shoulders"
+    ],
+    "bodyPart": "Shoulders",
+    "primary": "shoulders",
+    "secondary": [],
+    "equipment": [
+      "Dumbbell"
+    ],
+    "difficulty": "Beginner",
+    "timed": false,
+    "workSec": 35,
+    "restSec": 45,
+    "calories": 4,
+    "instructions": "Raise the dumbbells out to the sides until your arms are level with your shoulders.",
+    "sets": 3,
+    "reps": 12
+  },
+  {
+    "id": "EX21",
+    "name": "Bodyweight Squat",
+    "goal": [
+      "Legs",
+      "FatLoss"
+    ],
+    "bodyPart": "Legs",
+    "primary": "quads",
+    "secondary": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": false,
+    "workSec": 40,
+    "restSec": 40,
+    "calories": 6,
+    "instructions": "Sit your hips back and down as if into a chair, keeping your chest up, then stand.",
+    "sets": 3,
+    "reps": 13
+  },
+  {
+    "id": "EX22",
+    "name": "Lunge",
+    "goal": [
+      "Legs"
+    ],
+    "bodyPart": "Legs",
+    "primary": "quads",
+    "secondary": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": false,
+    "workSec": 40,
+    "restSec": 40,
+    "calories": 6,
+    "instructions": "Step forward and lower your back knee toward the floor, then push back to start.",
+    "sets": 3,
+    "reps": 13
+  },
+  {
+    "id": "EX23",
+    "name": "Glute Bridge",
+    "goal": [
+      "Legs"
+    ],
+    "bodyPart": "Legs",
+    "primary": "glutes",
+    "secondary": [
+      "hamstrings"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": false,
+    "workSec": 35,
+    "restSec": 30,
+    "calories": 4,
+    "instructions": "Lying on your back with knees bent, drive your hips up by squeezing your glutes.",
+    "sets": 3,
+    "reps": 12
+  },
+  {
+    "id": "EX24",
+    "name": "Calf Raise",
+    "goal": [
+      "Legs"
+    ],
+    "bodyPart": "Legs",
+    "primary": "calves",
+    "secondary": [],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": false,
+    "workSec": 30,
+    "restSec": 30,
+    "calories": 3,
+    "instructions": "Rise onto your toes as high as possible, then lower slowly under control.",
+    "sets": 3,
+    "reps": 10
+  },
+  {
+    "id": "EX25",
+    "name": "Jab-Cross Combo",
+    "goal": [
+      "Boxing"
+    ],
+    "bodyPart": "Arms",
+    "primary": "shoulders",
+    "secondary": [
+      "biceps",
+      "obliques"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Intermediate",
+    "timed": true,
+    "workSec": 45,
+    "restSec": 30,
+    "calories": 9,
+    "instructions": "Throw a quick jab with your lead hand followed by a cross from your rear hand, rotating your hips.",
+    "sets": null,
+    "reps": null
+  },
+  {
+    "id": "EX26",
+    "name": "Shadow Boxing Round",
+    "goal": [
+      "Boxing",
+      "FatLoss"
+    ],
+    "bodyPart": "Full Body",
+    "primary": "shoulders",
+    "secondary": [
+      "calves",
+      "obliques"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": true,
+    "workSec": 60,
+    "restSec": 30,
+    "calories": 11,
+    "instructions": "Throw continuous combinations at an imaginary opponent, staying light on your feet.",
+    "sets": null,
+    "reps": null
+  },
+  {
+    "id": "EX27",
+    "name": "Cat-Cow",
+    "goal": [
+      "Mobility"
+    ],
+    "bodyPart": "Back",
+    "primary": "lowerback",
+    "secondary": [
+      "abs"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": true,
+    "workSec": 40,
+    "restSec": 15,
+    "calories": 2,
+    "instructions": "On all fours, alternate arching and rounding your spine in a slow, controlled flow.",
+    "sets": null,
+    "reps": null
+  },
+  {
+    "id": "EX28",
+    "name": "World's Greatest Stretch",
+    "goal": [
+      "Mobility"
+    ],
+    "bodyPart": "Full Body",
+    "primary": "hamstrings",
+    "secondary": [
+      "quads",
+      "obliques"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": true,
+    "workSec": 40,
+    "restSec": 20,
+    "calories": 3,
+    "instructions": "From a deep lunge, rotate your torso toward your front leg and reach an arm overhead.",
+    "sets": null,
+    "reps": null
+  },
+  {
+    "id": "EX29",
+    "name": "Hip Circles",
+    "goal": [
+      "Mobility"
+    ],
+    "bodyPart": "Legs",
+    "primary": "glutes",
+    "secondary": [
+      "quads"
+    ],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "difficulty": "Beginner",
+    "timed": true,
+    "workSec": 30,
+    "restSec": 15,
+    "calories": 2,
+    "instructions": "Standing tall, circle your hips in a wide, slow rotation, then reverse direction.",
+    "sets": null,
+    "reps": null
+  }
+]
