@@ -1123,7 +1123,7 @@ function renderAdminForm(){
 
 /* ============ INIT ============ */
 async function init(){
-  root().innerHTML = `<div class="boot-screen">${ICONS.target}</div>`;
+     root().innerHTML = `<div class="boot-screen">${ICONS.target}<div class="boot-name">FIT3D</div><div class="boot-msg">Loading...</div></div>`;
   try { await API.init(); } catch (e) { /* fall back to fully local/offline mode */ }
   render();
 }
