@@ -21,17 +21,23 @@ const API = (() => {
   function getToken(){ return localStorage.getItem(TOKEN_KEY); }
   function setToken(t){ if (t) localStorage.setItem(TOKEN_KEY, t); else localStorage.removeItem(TOKEN_KEY); }
 
-  async function request(path, opts = {}){
-    if (!BASE) throw new Error('no-backend-configured');
-    const headers = Object.assign({ 'Content-Type': 'application/json' }, opts.headers || {});
-    const token = getToken();
-    if (token) headers.Authorization = 'Bearer ' + token;
-    const res = await fetch(BASE + path, Object.assign({}, opts, { headers }));
+async function request(path, opts = {}){
+  if (!BASE) throw new Error('no-backend-configured');
+  const headers = Object.assign({ 'Content-Type': 'application/json' }, opts.headers || {});
+  const token = getToken();
+  if (token) headers.Authorization = 'Bearer ' + token;
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), opts.timeoutMs || 6000);
+  try {
+    const res = await fetch(BASE + path, Object.assign({}, opts, { headers, signal: controller.signal }));
     const isJson = (res.headers.get('content-type') || '').includes('application/json');
     const body = isJson ? await res.json().catch(() => null) : null;
     if (!res.ok) throw new Error((body && body.error) || ('Request failed: ' + res.status));
     return body;
+  } finally {
+    clearTimeout(timer);
   }
+}
 
   async function init(){
     if (!BASE) { state.backendAvailable = false; return; }
