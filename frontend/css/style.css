@@ -313,3 +313,121 @@ textarea.field-input{ resize:vertical; }
   body{ padding:24px 0; }
   #frame{ min-height:calc(100vh - 48px); border-radius:32px; }
 }
+
+.weekly-goal-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.weekly-goal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.weekly-goal-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.weekly-goal-sub {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.weekly-goal-count {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.week-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.week-day {
+  text-align: center;
+  padding: 8px 3px;
+  border-radius: 12px;
+  background: var(--bg2);
+}
+
+.week-day-name {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.week-day-date {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.week-day-mark {
+  display: block;
+  min-height: 14px;
+  font-size: 12px;
+}
+
+.week-day.today {
+  border: 1px solid var(--accent);
+}
+
+.week-day.done {
+  background: var(--accent);
+  color: #fff;
+}
+
+.home-exercise-list {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.home-exercise-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--card);
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.home-exercise-num {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--bg2);
+  font-weight: 700;
+}
+
+.home-exercise-info {
+  flex: 1;
+}
+
+.home-exercise-name {
+  display: block;
+  font-weight: 700;
+}
+
+.home-exercise-meta {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 12px;
+}
