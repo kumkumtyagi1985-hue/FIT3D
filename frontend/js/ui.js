@@ -575,6 +575,15 @@ function finishWorkout(){
   state.progress.minutes += summary.minutes;
   state.progress.exercises += summary.exercises;
   state.progress.streak += 1;
+  const doneDate = new Date();
+const dateKey = `${doneDate.getFullYear()}-${String(doneDate.getMonth()+1).padStart(2,'0')}-${String(doneDate.getDate()).padStart(2,'0')}`;
+
+const workoutDates = JSON.parse(localStorage.getItem('fit3dWorkoutDates') || '[]');
+
+if (!workoutDates.includes(dateKey)) {
+  workoutDates.push(dateKey);
+  localStorage.setItem('fit3dWorkoutDates', JSON.stringify(workoutDates));
+}
   state.lastSummary = { name: wk.name, ...summary };
   state.player = null;
   state.view = 'summary';
