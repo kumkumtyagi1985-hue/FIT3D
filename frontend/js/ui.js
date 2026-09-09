@@ -190,7 +190,30 @@ function renderHome(){
   const hour = new Date().getHours();
   const greet = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
   const recs = shuffle(EXERCISES.filter(e => e.goal.includes(p.goal))).slice(0,4);
+const workoutDates = JSON.parse(localStorage.getItem('fit3dWorkoutDates') || '[]');
 
+const now = new Date();
+const dayIndex = (now.getDay() + 6) % 7;
+
+const monday = new Date(now);
+monday.setDate(now.getDate() - dayIndex);
+
+const weekDays = Array.from({length: 7}, (_, i) => {
+  const d = new Date(monday);
+  d.setDate(monday.getDate() + i);
+
+  const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+
+  return {
+    key,
+    day: d.toLocaleDateString('en-US', {weekday: 'short'}),
+    date: d.getDate(),
+    done: workoutDates.includes(key),
+    today: key === `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`
+  };
+});
+
+const weekDone = weekDays.filter(d => d.done).length;
   const content = `
     <div class="home">
       <div class="greeting">${greet}</div>
@@ -203,9 +226,44 @@ function renderHome(){
         <button class="btn primary full" id="startToday">${ICONS.play} Start Workout</button>
       </div>
 
+   <div class="section-label">Weekly Goals</div>
+<div class="weekly-goal-card">
+  <div class="weekly-goal-head">
+    <div>
+      <div class="weekly-goal-title">Weekly Workout Goal</div>
+      <div class="weekly-goal-sub">${weekDone}/5 workouts completed</div>
+    </div>
+    <div class="weekly-goal-count">${weekDone}/5</div>
+  </div>
+
+  <div class="week-calendar">
+    ${weekDays.map(d => `
+      <div class="week-day ${d.today ? 'today' : ''} ${d.done ? 'done' : ''}">
+        <span class="week-day-name">${d.day}</span>
+        <span class="week-day-date">${d.date}</span>
+        <span class="week-day-mark">${d.done ? '✓' : ''}</span>
+      </div>
+    `).join('')}
+  </div>
+</div>   
       <div class="section-label">Your Goal</div>
       <div class="goal-pill">${GOALS.find(g=>g.id===p.goal)?.icon||''} ${GOALS.find(g=>g.id===p.goal)?.label||'Full Body'}</div>
 
+<div class="section-label">Today's Exercises</div>
+<div class="home-exercise-list">
+  ${wk.items.map((e, i) => `
+    <button class="home-exercise-item" data-id="${e.id}">
+      <span class="home-exercise-num">${i + 1}</span>
+      <span class="home-exercise-info">
+        <span class="home-exercise-name">${e.name}</span>
+        <span class="home-exercise-meta">
+          ${e.timed ? `${e.workSec}s` : `${e.sets} × ${e.reps}`}
+        </span>
+      </span>
+      <span>›</span>
+    </button>
+  `).join('')}
+</div>
       <div class="section-label">Quick Exercises</div>
       <div class="chip-row">
         ${['Abs','Arms','Chest','Legs'].map(g => `<button class="chip" data-goal="${g}">${g}</button>`).join('')}
